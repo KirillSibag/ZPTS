@@ -1,0 +1,20 @@
+x = 1
+maxim = 0
+simp = 0
+count = 0
+
+while x != 0:
+	x = int(input())
+	
+	if x > maxim:
+		count = 2
+		simp = 0
+		
+		while count < x//2:
+			if x % count == 0:
+				simp += 1
+			count += 1
+			
+		if simp == 0:
+			maxim = x 
+print(maxim)
